@@ -254,3 +254,66 @@ body .main-container .container .cart-order-container .order-summary-container .
   text-transform: uppercase;
   border-bottom: 5px solid #D3D3D3;
 }
+body .main-container .container .cart-order-container .order-summary-container .order-page .payments-calculations table {
+  width: 100%;
+  border-collapse: collapse;
+}
+body .main-container .container .cart-order-container .order-summary-container .order-page .payments-calculations table tbody {
+  border-bottom: 5px solid #D3D3D3;
+}
+body .main-container .container .cart-order-container .order-summary-container .order-page .payments-calculations table tbody tr .top {
+  padding-top: 16px;
+}
+body .main-container .container .cart-order-container .order-summary-container .order-page .payments-calculations table tbody tr .order-title {
+  text-transform: uppercase;
+  text-align: left;
+  font: bold 14px/50px 'Oxygen', sans-serif;
+  color: black;
+}
+body .main-container .container .cart-order-container .order-summary-container .order-page .payments-calculations table tbody tr .order-title .addCoupon {
+  color: #707070;
+  text-transform: capitalize;
+  font-weight: 400;
+}
+body .main-container .container .cart-order-container .order-summary-container .order-page .payments-calculations table tbody tr .order-title:nth-child(2) {
+  text-align: end;
+}
+body .main-container .container .cart-order-container .order-summary-container .order-page .payments-calculations table tbody tr .itemTotal {
+  font: bold 22px/50px 'Oxygen', sans-serif;
+}
+body .main-container .container .cart-order-container .order-summary-container .order-page .payments-calculations table tbody tr .itemPrice {
+  font: bold 16px/50px 'Oxygen', sans-serif;
+  padding-top: 16px;
+}
+body .main-container .container .cart-order-container .order-summary-container .order-page .payments-calculations .online-payments {
+  padding-top: 20px;
+}
+body .main-container .container .cart-order-container .order-summary-container .order-page .payments-calculations .online-payments .checkout {
+  background-color: #72AC72;
+  color: white;
+  width: 100%;
+  font: bold 20px/26px 'Oxygen', sans-serif;
+  padding: 18px 20px;
+  border: none;
+}
+body .main-container .container .cart-order-container .order-summary-container .order-page .payments-calculations .online-payments .debits .paymentsImg {
+  width: 100%;
+  padding-top: 10px;
+}
+body .main-container .container .cart-order-container .order-summary-container .order-page .payments-calculations .online-payments .debits .or {
+  text-align: center;
+  padding: 15px 0px;
+}
+body .main-container .container .cart-order-container .order-summary-container .order-page .payments-calculations .online-payments .debits .or span {
+  font: bold 16px/21px 'Montserrat', sans-serif;
+}
+body .main-container .container .cart-order-container .order-summary-container .order-page .payments-calculations .online-payments .paytm .payLater {
+  padding-bottom: 5px;
+}
+body .main-container .container .cart-order-container .order-summary-container .order-page .payments-calculations .online-payments .paytm .or {
+  text-align: center;
+  padding: 15px 0px;
+}
+body .main-container .container .cart-order-container .order-summary-container .order-page .payments-calculations .online-payments .paytm .or span {
+  font: bold 16px/21px 'Montserrat', sans-serif;
+}
