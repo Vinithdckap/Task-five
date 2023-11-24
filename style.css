@@ -1,0 +1,240 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v26/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Ew-.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v26/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtZ6Ew-.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v26/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCu170w-.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v26/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCuM70w-.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Oxygen';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/oxygen/v15/2sDfZG1Wl4Lcnbu6iQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Oxygen';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/oxygen/v15/2sDcZG1Wl4LcnbuCNWgDbw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Oxygen';
+  src: url(Fonts/Oxygen-Bold.ttf);
+  font-weight: bold;
+}
+body {
+  font-family: 'Montserrat';
+}
+body button {
+  cursor: pointer;
+}
+body .main-container .container .header-container .header-section .header {
+  background-color: black;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+body .main-container .container .header-container .header-section .header .logo .dltLogo {
+  height: auto;
+  padding: 23px 0px 18px 41px;
+}
+body .main-container .container .header-container .header-section .header .title .freeTitle {
+  font: 500 20px/38px 'Montserrat', sans-serif;
+  color: #FFFFFF;
+}
+body .main-container .container .header-container .header-section .header .title .spanText {
+  font: bold 20px/38px 'Montserrat', sans-serif;
+  color: #FFFFFF;
+}
+body .main-container .container .header-container .header-section .header .account {
+  margin-right: 40px;
+}
+body .main-container .container .header-container .header-section .header .account h3 {
+  color: #FFFFFF;
+  font: bold 20px/38px 'Montserrat', sans-serif;
+}
+body .main-container .container .header-container .header-section .header .account a {
+  color: #FFFFFF;
+}
+body .main-container .container .header-container .service-container .service-section .facilities {
+  background-color: #F4F4F4;
+  padding: 14px 0px 20px 85px;
+  display: flex;
+  align-items: center;
+  column-gap: 40px;
+}
+body .main-container .container .header-container .service-container .service-section .facilities .service {
+  display: flex;
+}
+body .main-container .container .header-container .service-container .service-section .facilities .service .serviceImg .delivery {
+  width: 100%;
+  height: auto;
+}
+body .main-container .container .header-container .service-container .service-section .facilities .service .service-contents {
+  padding-left: 20px;
+  border-right: 1px solid #707070;
+  padding-right: 40px;
+}
+body .main-container .container .header-container .service-container .service-section .facilities .service .service-contents .deliveryTitle {
+  font: bold 21px/25px 'Montserrat', sans-serif;
+  color: black;
+}
+body .main-container .container .header-container .service-container .service-section .facilities .service .service-contents .deliveryContent {
+  font: bold 14px/18px 'Oxygen', sans-serif;
+  color: #525252;
+  max-width: 294px;
+  padding-top: 4px;
+}
+body .main-container .container .header-container .service-container .service-section .facilities .service .last {
+  border-right: unset;
+}
+body .main-container .container .cartPage-container {
+  padding: 40px 0px 20px 65px;
+}
+body .main-container .container .cartPage-container .cartPage-sections {
+  padding-bottom: 20px;
+}
+body .main-container .container .cartPage-container .cartPage-sections .cartPage-header {
+  padding-bottom: 30px;
+}
+body .main-container .container .cartPage-container .cartPage-sections .cartPage-header .yourCart {
+  font: bold 32px/39px 'Montserrat', sans-serif;
+  color: black;
+}
+body .main-container .container .cartPage-container .cartPage-sections .cartPage-header .yourCart .count {
+  font: 600 18px/22px 'Montserrat', sans-serif;
+}
+body .main-container .container .cartPage-container .cartPage-sections .cart-table {
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 860px;
+  border-bottom: 5px solid #D3D3D3;
+}
+body .main-container .container .cartPage-container .cartPage-sections .cart-table .cart-header {
+  text-align: left;
+  border-bottom: 5px solid #D3D3D3;
+}
+body .main-container .container .cartPage-container .cartPage-sections .cart-table .cart-header .table-row .table-header {
+  font: bold 16px/50px 'Montserrat', sans-serif;
+}
+body .main-container .container .cartPage-container .cartPage-sections .cart-table .table-body .cart-item {
+  border-bottom: 1px solid #707070;
+}
+body .main-container .container .cartPage-container .cartPage-sections .cart-table .table-body .cart-item .table-data {
+  padding-left: 20px;
+  padding: 20px 0px;
+}
+body .main-container .container .cartPage-container .cartPage-sections .cart-table .table-body .cart-item .table-data .productName {
+  font: bold 12px/18px 'Oxygen', sans-serif;
+  color: #E04E00;
+  text-transform: uppercase;
+}
+body .main-container .container .cartPage-container .cartPage-sections .cart-table .table-body .cart-item .table-data .productDescription {
+  font: bold 16px/18px 'Oxygen', sans-serif;
+  max-width: 300px;
+  padding: 5px 0px 10px 0px;
+}
+body .main-container .container .cartPage-container .cartPage-sections .cart-table .table-body .cart-item .table-data .option {
+  font: 400 13px/18px 'Oxygen', sans-serif;
+  padding-bottom: 10px;
+}
+body .main-container .container .cartPage-container .cartPage-sections .cart-table .table-body .cart-item .table-data .option .yes {
+  color: #707070;
+}
+body .main-container .container .cartPage-container .cartPage-sections .cart-table .table-body .cart-item .table-data .change {
+  color: #707070;
+  font: bold 12px/18px 'Oxygen', sans-serif;
+}
+body .main-container .container .cartPage-container .cartPage-sections .cart-table .table-body .cart-item .price {
+  padding-left: unset;
+  padding-right: 30px;
+}
+body .main-container .container .cartPage-container .cartPage-sections .cart-table .table-body .cart-item .price p {
+  font: 500 16px/50px 'Oxygen', sans-serif;
+}
+body .main-container .container .cartPage-container .cartPage-sections .cart-table .table-body .cart-item .input {
+  padding-left: unset;
+  padding-right: 30px;
+}
+body .main-container .container .cartPage-container .cartPage-sections .cart-table .table-body .cart-item .input .input-div {
+  display: flex;
+  border: 1px solid #707070;
+  justify-content: space-between;
+  width: 100px;
+}
+body .main-container .container .cartPage-container .cartPage-sections .cart-table .table-body .cart-item .input .input-div .decrease {
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-right: 1px solid #707070;
+  background-color: #EAEAEA;
+}
+body .main-container .container .cartPage-container .cartPage-sections .cart-table .table-body .cart-item .input .input-div .decrease .more {
+  color: #D3D3D3;
+}
+body .main-container .container .cartPage-container .cartPage-sections .cart-table .table-body .cart-item .input .input-div input {
+  max-width: 40px;
+  border: none;
+  text-align: center;
+}
+body .main-container .container .cartPage-container .cartPage-sections .cart-table .table-body .cart-item .input .input-div .increase {
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-left: 1px solid #707070;
+}
+body .main-container .container .cartPage-container .cartPage-sections .cart-table .table-body .cart-item .input .input-div .increase .less {
+  color: #707070;
+}
+body .main-container .container .cartPage-container .cartPage-sections .cart-table .table-body .cart-item .total {
+  padding-left: unset;
+  padding-right: 30px;
+}
+body .main-container .container .cartPage-container .cartPage-sections .cart-table .table-body .cart-item .total .rupees {
+  font: bold 16px/50px 'Oxygen', sans-serif;
+  color: black;
+}
+body .main-container .container .cartPage-container .cartPage-sections .cart-table .table-body .cart-item .total .remove .cancel {
+  vertical-align: middle;
+  color: #5A5B5E;
+  cursor: pointer;
+}
+body .main-container .container .cartPage-container .backSection .backContent .keepShopping {
+  border: none;
+  background-color: transparent;
+  font: bold 13px/26px 'Montserrat', sans-serif;
+  text-transform: uppercase;
+}
+body .main-container .container .cartPage-container .backSection .backContent .keepShopping .arrow {
+  padding-right: 10px;
+}
