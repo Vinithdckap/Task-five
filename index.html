@@ -77,125 +77,139 @@
 
             <!-- cart details -->
 
-            <div class="cartPage-container">
-                <div class="cartPage-sections">
-                    <div class="cartPage-header">
-                        <h1 class="yourCart">Your Cart <span class="count">(2 Items)</span></h1>
+            <div class="cart-order-container">
+                <div class="cartPage-container">
+                    <div class="cartPage-sections">
+                        <div class="cartPage-header">
+                            <h1 class="yourCart">Your Cart <span class="count">(2 Items)</span></h1>
+                        </div>
+    
+                        <table class="cart-table">
+                            <thead class="cart-header">
+                                <tr class="table-row">
+                                    <th class="table-header" colspan="2">ITEM</th>
+                                    <th class="table-header">PRICE</th>
+                                    <th class="table-header">QUANTITY</th>
+                                    <th class="table-header">SUBTOTAL</th>
+                                </tr>
+                            </thead>
+                            <tbody class="table-body">
+    
+    
+                                <tr class="cart-item">
+                                    <td class="table-data">
+                                        <img class="productImg" src="./Images/Knife.png" alt="">
+                                    </td>
+                                    <td class="table-data">
+                                        <h2 class="productName">Demko Knives</h2>
+                                        <p class="productDescription"> Demko AD20.5 - Slotted Shark Foot - OD Green Grivory
+                                            - Black Blade</p>
+                                        <h4 class="option">Engrave It!: (+ $6.95): <span class="yes">Yes</span> </h4>
+                                        <a class="change" href="#">Change</a>
+                                    </td>
+    
+    
+                                    <td class="table-data price">
+                                        <p>$166.94</p>
+                                    </td>
+    
+    
+                                    <td class="table-data input">
+                                        <div class="input-div">
+                                            <button class="decrease">
+                                                <span class="material-symbols-outlined more">
+                                                    expand_more
+                                                </span>
+                                            </button>
+                                            <input type="number" value="1">
+                                            <button class="increase">
+                                                <span class="material-symbols-outlined less">
+                                                    expand_less
+                                                </span>
+                                            </button>
+                                        </div>
+                                    </td>
+    
+                                    <td class="table-data total">
+                                        <span class="rupees">$166.94</span>
+                                        <a class="remove" href="">
+                                            <span class="material-symbols-outlined cancel">
+                                                cancel
+                                            </span></a>
+    
+    
+    
+                                    </td>
+                                </tr>
+    
+                                <tr class="cart-item">
+                                    <td class="table-data">
+                                        <img class="productImg" src="./Images/knife two.png" alt="">
+                                    </td>
+                                    <td class="table-data">
+                                        <h2 class="productName">Toor Knives</h2>
+                                        <p class="productDescription">Toor Merchant 2.0 T - Textured Green G-10</p>
+                                        <h4 class="option">Engrave It!: (+ $6.95): <span class="yes">No</span> </h4>
+                                        <a class="change" href="#">Change</a>
+                                    </td>
+    
+    
+                                    <td class="table-data price">
+                                        <p>$265.00</p>
+                                    </td>
+    
+    
+                                    <td class="table-data input">
+                                        <div class="input-div">
+                                            <button class="decrease">
+                                                <span class="material-symbols-outlined more">
+                                                    expand_more
+                                                </span>
+                                            </button>
+                                            <input type="number" value="1">
+                                            <button class="increase">
+                                                <span class="material-symbols-outlined less">
+                                                    expand_less
+                                                </span>
+                                            </button>
+                                        </div>
+                                    </td>
+    
+                                    <td class="table-data total">
+                                        <span class="rupees">$265.00</span>
+                                        <a class="remove" href="">
+                                            <span class="material-symbols-outlined cancel">
+                                                cancel
+                                            </span></a>
+    
+    
+    
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+    
                     </div>
-
-                    <table class="cart-table">
-                        <thead class="cart-header">
-                            <tr class="table-row">
-                                <th class="table-header" colspan="2">ITEM</th>
-                                <th class="table-header">PRICE</th>
-                                <th class="table-header">QUANTITY</th>
-                                <th class="table-header">SUBTOTAL</th>
-                            </tr>
-                        </thead>
-                        <tbody class="table-body">
-
-
-                            <tr class="cart-item">
-                                <td class="table-data">
-                                    <img class="productImg" src="./Images/Knife.png" alt="">
-                                </td>
-                                <td class="table-data">
-                                    <h2 class="productName">Demko Knives</h2>
-                                    <p class="productDescription"> Demko AD20.5 - Slotted Shark Foot - OD Green Grivory
-                                        - Black Blade</p>
-                                    <h4 class="option">Engrave It!: (+ $6.95): <span class="yes">Yes</span> </h4>
-                                    <a class="change" href="#">Change</a>
-                                </td>
-
-
-                                <td class="table-data price">
-                                    <p>$166.94</p>
-                                </td>
-
-
-                                <td class="table-data input">
-                                    <div class="input-div">
-                                        <button class="decrease">
-                                            <span class="material-symbols-outlined more">
-                                                expand_more
-                                            </span>
-                                        </button>
-                                        <input type="number" value="1">
-                                        <button class="increase">
-                                            <span class="material-symbols-outlined less">
-                                                expand_less
-                                            </span>
-                                        </button>
-                                    </div>
-                                </td>
-
-                                <td class="table-data total">
-                                    <span class="rupees">$166.94</span>
-                                    <a class="remove" href="">
-                                        <span class="material-symbols-outlined cancel">
-                                            cancel
-                                        </span></a>
-
-
-
-                                </td>
-                            </tr>
-
-                            <tr class="cart-item">
-                                <td class="table-data">
-                                    <img class="productImg" src="./Images/knife two.png" alt="">
-                                </td>
-                                <td class="table-data">
-                                    <h2 class="productName">Toor Knives</h2>
-                                    <p class="productDescription">Toor Merchant 2.0 T - Textured Green G-10</p>
-                                    <h4 class="option">Engrave It!: (+ $6.95): <span class="yes">No</span> </h4>
-                                    <a class="change" href="#">Change</a>
-                                </td>
-
-
-                                <td class="table-data price">
-                                    <p>$265.00</p>
-                                </td>
-
-
-                                <td class="table-data input">
-                                    <div class="input-div">
-                                        <button class="decrease">
-                                            <span class="material-symbols-outlined more">
-                                                expand_more
-                                            </span>
-                                        </button>
-                                        <input type="number" value="1">
-                                        <button class="increase">
-                                            <span class="material-symbols-outlined less">
-                                                expand_less
-                                            </span>
-                                        </button>
-                                    </div>
-                                </td>
-
-                                <td class="table-data total">
-                                    <span class="rupees">$265.00</span>
-                                    <a class="remove" href="">
-                                        <span class="material-symbols-outlined cancel">
-                                            cancel
-                                        </span></a>
-
-
-
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-
+    
+                    <div class="backSection">
+                        <div class="backContent">
+                            <button  class="keepShopping"> <img class="arrow" src="./Images/Group 7771.svg" alt="">Keep Shopping</button>
+                        </div>
+                    </div>
                 </div>
+    
+    
+                <!-- order summary details -->
+    
+                <div class="order-summary-container">
+                    <div class="order-page">
 
-                <div class="backSection">
-                    <div class="backContent">
-                        <button  class="keepShopping"> <img class="arrow" src="./Images/Group 7771.svg" alt="">Keep Shopping</button>
+                        <h1 class="summaryTitle">Order Summary</h1>
+    
                     </div>
                 </div>
             </div>
+           
 
         </div>
     </div>
