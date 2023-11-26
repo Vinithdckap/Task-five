@@ -90,7 +90,6 @@ body .main-container .container .header-container .service-container .service-se
   background-color: #F4F4F4;
   padding: 14px 0px 20px 85px;
   display: flex;
-  align-items: center;
   column-gap: 40px;
 }
 body .main-container .container .header-container .service-container .service-section .facilities .service {
@@ -316,4 +315,87 @@ body .main-container .container .cart-order-container .order-summary-container .
 }
 body .main-container .container .cart-order-container .order-summary-container .order-page .payments-calculations .online-payments .paytm .or span {
   font: bold 16px/21px 'Montserrat', sans-serif;
+}
+@media screen and (min-width: 1024px) and (max-width: 1365px) {
+  body .main-container .container .header-container .header-section .header .logo .dltLogo {
+    max-width: 116px;
+  }
+  body .main-container .container .header-container .header-section .header .title .freeTitle {
+    font-size: 20px;
+  }
+  body .main-container .container .header-container .header-section .header .account h3 {
+    font-size: 14px;
+  }
+  body .main-container .container .header-container .service-container .service-section .facilities {
+    padding: 14px 0px 20px 20px;
+    column-gap: 16px;
+  }
+  body .main-container .container .header-container .service-container .service-section .facilities .service .serviceImg .delivery {
+    height: auto;
+  }
+  body .main-container .container .header-container .service-container .service-section .facilities .service .service-contents {
+    padding-right: 16px;
+    padding-left: 14px;
+  }
+  body .main-container .container .header-container .service-container .service-section .facilities .service .service-contents .deliveryTitle {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  body .main-container .container .header-container .service-container .service-section .facilities .service .service-contents .deliveryContent {
+    font-size: 13px;
+    line-height: 18px;
+  }
+  body .main-container .container .cart-order-container {
+    padding: 40px 0px 20px 0px;
+  }
+  body .main-container .container .cart-order-container .cartPage-container {
+    max-width: 567px;
+  }
+  body .main-container .container .cart-order-container .cartPage-container .cartPage-sections .cart-table .cart-header .table-row .table-header {
+    font-size: 15px;
+  }
+  body .main-container .container .cart-order-container .cartPage-container .cartPage-sections .cart-table .table-body .cart-item .table-data {
+    padding: 20px 10px 20px 0px;
+  }
+  body .main-container .container .cart-order-container .cartPage-container .cartPage-sections .cart-table .table-body .cart-item .table-data .productImg {
+    max-width: 100px;
+    height: auto;
+  }
+  body .main-container .container .cart-order-container .cartPage-container .cartPage-sections .cart-table .table-body .cart-item .table-data .productDescription {
+    font-size: 15px;
+  }
+  body .main-container .container .cart-order-container .cartPage-container .cartPage-sections .cart-table .table-body .cart-item .total {
+    padding-right: unset;
+  }
+  body .main-container .container .cart-order-container .order-summary-container {
+    padding: 20px;
+    max-width: 360px;
+    margin-top: 47px;
+  }
+}
+@media screen and (max-width: 1023px) {
+  body .main-container .container .header-container .header-section .header .logo .dltLogo {
+    height: auto;
+    padding: 23px 0px 18px 20px;
+    max-width: 84px;
+  }
+  body .main-container .container .header-container .header-section .header .title .freeTitle {
+    font-size: 15px;
+  }
+  body .main-container .container .header-container .header-section .header .account h3 {
+    font-size: 13px;
+  }
+  body .main-container .container .header-container .service-container {
+    display: none;
+  }
+  body .main-container .container .cart-order-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  body .main-container .container .cart-order-container .cartPage-container .cartPage-sections .cartPage-header {
+    text-align: center;
+  }
+  body .main-container .container .cart-order-container .cartPage-container .cartPage-sections .cart-table .cart-header {
+    display: none;
+  }
 }
