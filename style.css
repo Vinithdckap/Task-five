@@ -571,6 +571,7 @@ body .main-container .container .cart-order-container .order-summary-container .
   }
   body .main-container .container .cart-order-container .cartPage-container .cartPage-sections .cart-table .table-body .cart-item .input .input-div {
     margin-top: 10px;
+    text-align: center;
   }
   body .main-container .container .cart-order-container .cartPage-container .cartPage-sections .cart-table .table-body .last {
     border-top: 1px solid #707070;
