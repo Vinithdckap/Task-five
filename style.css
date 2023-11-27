@@ -329,6 +329,7 @@ body .main-container .container .cart-order-container .order-summary-container .
   body .main-container .container .header-container .service-container .service-section .facilities {
     padding: 14px 0px 20px 20px;
     column-gap: 16px;
+    justify-content: space-evenly;
   }
   body .main-container .container .header-container .service-container .service-section .facilities .service .serviceImg .delivery {
     height: auto;
@@ -345,17 +346,28 @@ body .main-container .container .cart-order-container .order-summary-container .
     font-size: 13px;
     line-height: 18px;
   }
+  body .main-container .container .header-container .service-container .service-section .facilities .first {
+    max-width: 320px;
+  }
+  body .main-container .container .header-container .service-container .service-section .facilities .second {
+    max-width: 330px;
+  }
   body .main-container .container .cart-order-container {
     padding: 40px 0px 20px 0px;
   }
   body .main-container .container .cart-order-container .cartPage-container {
-    max-width: 567px;
+    max-width: 599px;
+    width: 100%;
   }
   body .main-container .container .cart-order-container .cartPage-container .cartPage-sections .cart-table .cart-header .table-row .table-header {
     font-size: 15px;
   }
+  body .main-container .container .cart-order-container .cartPage-container .cartPage-sections .cart-table .cart-header .table-row .qty {
+    text-align: center;
+  }
   body .main-container .container .cart-order-container .cartPage-container .cartPage-sections .cart-table .table-body .cart-item .table-data {
     padding: 20px 10px 20px 0px;
+    max-width: 187px;
   }
   body .main-container .container .cart-order-container .cartPage-container .cartPage-sections .cart-table .table-body .cart-item .table-data .productImg {
     max-width: 100px;
