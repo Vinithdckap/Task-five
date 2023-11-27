@@ -287,6 +287,35 @@ body .main-container .container .cart-order-container .order-summary-container .
   font: bold 16px/50px 'Oxygen', sans-serif;
   padding-top: 16px;
 }
+body .main-container .container .cart-order-container .order-summary-container .order-page .payments-calculations table tbody .formDetails {
+  display: none;
+}
+body .main-container .container .cart-order-container .order-summary-container .order-page .payments-calculations table tbody .formDetails .order-title label {
+  font: 400 14px/50px 'Oxygen', sans-serif;
+}
+body .main-container .container .cart-order-container .order-summary-container .order-page .payments-calculations table tbody .formDetails .order-title select {
+  height: 40px;
+  padding: 0.5em;
+  border: 1px solid #e2e2e2;
+  border-radius: 2px;
+  font-size: 13px;
+  color: #707070;
+  width: 160px;
+  font: 400 13px/16px 'Oxygen', sans-serif;
+}
+body .main-container .container .cart-order-container .order-summary-container .order-page .payments-calculations table tbody .formDetails .order-title .estimateBtn {
+  height: 40px;
+  padding: 0.5em;
+  background-color: black;
+  border-radius: 2px;
+  font: bold 13px/16px 'Oxygen', sans-serif;
+  color: white;
+  width: 160px;
+  border: none;
+}
+body .main-container .container .cart-order-container .order-summary-container .order-page .payments-calculations table tbody .open {
+  display: block;
+}
 body .main-container .container .cart-order-container .order-summary-container .order-page .payments-calculations .online-payments {
   padding-top: 20px;
 }
@@ -405,7 +434,8 @@ body .main-container .container .cart-order-container .order-summary-container .
   }
   body .main-container .container .header-container .service-container .service-section .facilities {
     padding: 14px 0px 20px 0px;
-    column-gap: 20px;
+    column-gap: unset;
+    align-items: center;
   }
   body .main-container .container .header-container .service-container .service-section .facilities .service {
     display: flex;
@@ -413,13 +443,16 @@ body .main-container .container .cart-order-container .order-summary-container .
     align-items: center;
   }
   body .main-container .container .header-container .service-container .service-section .facilities .service .serviceImg .delivery {
-    width: unset;
+    width: 40px;
   }
   body .main-container .container .header-container .service-container .service-section .facilities .service .service-contents {
-    padding-right: 20px;
+    padding: 0px 10px;
   }
   body .main-container .container .header-container .service-container .service-section .facilities .service .service-contents .deliveryTitle {
     font: bold 18px/25px 'Montserrat', sans-serif;
+  }
+  body .main-container .container .header-container .service-container .service-section .facilities .first .serviceImg .delivery {
+    width: 60px;
   }
   body .main-container .container .cart-order-container {
     flex-direction: column;
