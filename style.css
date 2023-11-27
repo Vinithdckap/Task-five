@@ -401,7 +401,25 @@ body .main-container .container .cart-order-container .order-summary-container .
     font-size: 13px;
   }
   body .main-container .container .header-container .service-container {
-    display: none;
+    display: block;
+  }
+  body .main-container .container .header-container .service-container .service-section .facilities {
+    padding: 14px 0px 20px 0px;
+    column-gap: 20px;
+  }
+  body .main-container .container .header-container .service-container .service-section .facilities .service {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  body .main-container .container .header-container .service-container .service-section .facilities .service .serviceImg .delivery {
+    width: unset;
+  }
+  body .main-container .container .header-container .service-container .service-section .facilities .service .service-contents {
+    padding-right: 20px;
+  }
+  body .main-container .container .header-container .service-container .service-section .facilities .service .service-contents .deliveryTitle {
+    font: bold 18px/25px 'Montserrat', sans-serif;
   }
   body .main-container .container .cart-order-container {
     flex-direction: column;
@@ -446,15 +464,49 @@ body .main-container .container .cart-order-container .order-summary-container .
   }
 }
 @media screen and (max-width: 767px) {
-  body .main-container .container .header .title {
+  body .main-container .container .header-container .header-section .header .title {
     display: none;
+  }
+  body .main-container .container .header-container .service-container {
+    display: block;
+  }
+  body .main-container .container .header-container .service-container .service-section .facilities {
+    flex-direction: column;
+    padding: 0px;
+    align-items: center;
+  }
+  body .main-container .container .header-container .service-container .service-section .facilities .service {
+    max-width: 243px;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  body .main-container .container .header-container .service-container .service-section .facilities .service .serviceImg {
+    padding: 20px 0px 5px 0px;
+  }
+  body .main-container .container .header-container .service-container .service-section .facilities .service .serviceImg .delivery {
+    width: unset;
+  }
+  body .main-container .container .header-container .service-container .service-section .facilities .service .service-contents {
+    border-right: unset;
+    border-bottom: 1px solid #707070;
+    padding: 0px 0px 20px 0px;
+  }
+  body .main-container .container .header-container .service-container .service-section .facilities .service .service-contents .deliveryTitle {
+    font: bold 18px/25px 'Montserrat', sans-serif;
+  }
+  body .main-container .container .header-container .service-container .service-section .facilities .service .last {
+    border-bottom: unset;
   }
   body .main-container .container .cart-order-container {
     padding: 30px 20px 20px 20px;
-    display: block;
+    display: flex;
   }
   body .main-container .container .cart-order-container .cartPage-container .cartPage-sections .cart-table .table-body .cart-item {
     border-bottom: unset;
+    justify-content: center;
+    align-items: center;
   }
   body .main-container .container .cart-order-container .cartPage-container .cartPage-sections .cart-table .table-body .cart-item .table-data {
     flex-basis: 30%;

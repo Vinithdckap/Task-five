@@ -678,7 +678,36 @@ body {
                     }
 
                     .service-container {
-                        display: none;
+                        display: block;
+
+                        .service-section {
+                            .facilities {
+                                padding: 14px 0px 20px 0px;
+                                column-gap: 20px;
+
+                                .service {
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: center;
+
+                                    .serviceImg {
+                                        .delivery {
+                                            width: unset;
+                                        }
+                                    }
+
+                                    .service-contents {
+                                        padding-right: 20px;
+
+                                        .deliveryTitle {
+                                            font: bold 18px/25px 'Montserrat', sans-serif;
+
+                                        }
+
+                                    }
+                                }
+                            }
+                        }
                     }
 
                 }
@@ -773,15 +802,66 @@ body {
     body {
         .main-container {
             .container {
-                .header {
-                    .title {
-                        display: none;
+                .header-container {
+                    .header-section {
+                        .header {
+                            .title {
+                                display: none;
+                            }
+                        }
                     }
+
+                    .service-container {
+                        display: block;
+
+                        .service-section {
+                            .facilities {
+                                flex-direction: column;
+                                padding: 0px;
+                                align-items: center;
+
+
+                                .service {
+                                    max-width: 243px;
+                                    text-align: center;
+                                    flex-direction: column;
+                                    align-items: center;
+                                    justify-content: center;
+
+                                    .serviceImg {
+                                        padding: 20px 0px 5px 0px;
+
+                                        .delivery {
+                                            width: unset;
+                                        }
+                                    }
+
+                                    .service-contents {
+                                        border-right: unset;
+                                        border-bottom: 1px solid #707070;
+                                        padding: 0px 0px 20px 0px;
+
+                                        .deliveryTitle {
+                                            font: bold 18px/25px 'Montserrat', sans-serif;
+
+                                        }
+
+                                    }
+
+                                    .last {
+                                        border-bottom: unset;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
                 }
+
 
                 .cart-order-container {
                     padding: 30px 20px 20px 20px;
-                    display: block;
+                    display: flex;
 
                     .cartPage-container {
                         .cartPage-sections {
@@ -789,8 +869,9 @@ body {
                                 .table-body {
                                     .cart-item {
                                         border-bottom: unset;
+                                        justify-content: center;
+                                        align-items: center;
 
-                                       
                                         .table-data {
                                             flex-basis: 30%;
                                             padding-top: 15px;
@@ -814,7 +895,7 @@ body {
 
                                         .product {
                                             flex-basis: 55%;
-                                            padding:15px 0px 0px 0px;
+                                            padding: 15px 0px 0px 0px;
 
 
                                         }
@@ -833,14 +914,14 @@ body {
 
                                             .remove {
                                                 padding-left: unset;
-                          
+
 
                                             }
                                         }
 
                                         .input {
 
-                                            .input-div{
+                                            .input-div {
                                                 margin-top: 10px;
 
                                             }
@@ -849,6 +930,7 @@ body {
 
 
                                     }
+
                                     .last {
                                         border-top: 1px solid #707070;
                                     }
