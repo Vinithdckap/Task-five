@@ -387,6 +387,24 @@ body .main-container .container .cart-order-container .order-summary-container .
 body .main-container .container .cart-order-container .order-summary-container .order-page .payments-calculations .online-payments .paytm .or span {
   font: bold 16px/21px 'Montserrat', sans-serif;
 }
+body .main-container .container .footer-container .inner-footer-container {
+  background-color: #EAEAEA;
+  width: 100%;
+}
+body .main-container .container .footer-container .inner-footer-container .footerText {
+  padding: 20px 0px;
+  text-align: center;
+  color: #525252;
+  font: 400 11px/14px 'Montserrat', sans-serif;
+}
+@media screen and (max-width: 767px) {
+  body .main-container .container .footer-container .inner-footer-container .footerText {
+    padding: 20px 20px;
+  }
+}
+body .main-container .container .footer-container .inner-footer-container a {
+  color: #525252;
+}
 @media screen and (min-width: 1024px) and (max-width: 1365px) {
   body .main-container .container .header-container .header-section .header .logo .dltLogo {
     max-width: 116px;
@@ -620,6 +638,9 @@ body .main-container .container .cart-order-container .order-summary-container .
   body .main-container .container .cart-order-container .order-summary-container {
     max-width: 340px;
     padding: 18px;
+  }
+  body .main-container .container .cart-order-container .order-summary-container .order-page .payments-calculations .summaryDiv .formDetails.coupon .form-title input {
+    width: 226px;
   }
   body .main-container .container .cart-order-container .order-summary-container .order-page .payments-calculations .online-payments .checkout {
     display: flex;

@@ -380,136 +380,6 @@ body {
 
                         .payments-calculations {
 
-                            // table {
-                            //     width: 100%;
-                            //     border-collapse: collapse;
-
-                            //     // margin-bottom: 20px;
-                            //     tbody {
-
-                            //         border-bottom: 5px solid #D3D3D3;
-
-                            //         tr {
-
-                            //             .top {
-                            //                 padding-top: 16px;
-                            //             }
-
-                            //             .order-title {
-                            //                 text-transform: uppercase;
-                            //                 text-align: left;
-                            //                 font: bold 14px/50px @oxygen;
-                            //                 color: @primary-color;
-
-                            //                 .addCoupon {
-                            //                     color: #707070;
-                            //                     text-transform: capitalize;
-                            //                     font-weight: 400;
-                            //                 }
-
-                            //                 .cancel {
-                            //                     display: none;
-                            //                 }
-                            //             }
-
-                            //             .order-title:nth-child(2) {
-
-                            //                 text-align: end;
-
-                            //             }
-
-
-                            //             .itemTotal {
-                            //                 font: bold 22px/50px @oxygen;
-                            //             }
-
-                            //             .itemPrice {
-                            //                 font: bold 16px/50px @oxygen;
-                            //                 padding-top: 16px;
-
-                            //             }
-
-                            //         }
-
-                            //         .formDetails {
-                            //             // display: none;
-
-                            //             .order-title {
-                            //                 text-align: left;
-
-                            //                 label {
-                            //                     font: 400 14px/50px @oxygen;
-                            //                 }
-
-                            //                 select,
-                            //                 input {
-                            //                     height: 40px;
-                            //                     padding: 0.5em;
-                            //                     border: 1px solid #e2e2e2;
-                            //                     border-radius: 2px;
-                            //                     font-size: 13px;
-                            //                     color: #707070;
-                            //                     width: 150px;
-                            //                     font: 400 13px/16px @oxygen;
-                            //                 }
-
-                            //                 .estimateBtn {
-                            //                     height: 40px;
-                            //                     padding: 0.5em;
-                            //                     background-color: black;
-                            //                     border-radius: 2px;
-                            //                     font: bold 13px/16px @oxygen;
-                            //                     color: white;
-                            //                     width: 100%;
-                            //                     border: none;
-                            //                 }
-                            //             }
-
-                            //             .form {
-                            //                 text-align: end;
-                            //             }
-
-
-
-
-                            //         }
-
-                            //         // .coupon {
-                            //         //     // display: block;
-
-                            //         //     td {
-                            //         //         input {
-                            //         //             height: 40px;
-                            //         //             padding: 0.5em;
-                            //         //             border: 1px solid #e2e2e2;
-                            //         //             border-radius: 2px;
-                            //         //             font-size: 13px;
-                            //         //             color: #707070;
-                            //         //             width: 200px;
-                            //         //             font: 400 13px/16px @oxygen;
-                            //         //         }
-                            //         //         .apply{
-                            //         //             height: 40px;
-                            //         //             padding: 0.5em;
-                            //         //             background-color: black;
-                            //         //             border-radius: 2px;
-                            //         //             font: bold 13px/16px @oxygen;
-                            //         //             color: white;
-                            //         //             width: 60px;
-                            //         //             border: none;
-                            //         //         }
-
-                            //         //     }
-
-
-
-                            //         // }
-
-                            //     }
-
-                            //    
-
-                            // }
 
                             .summaryDiv {
 
@@ -555,7 +425,7 @@ body {
 
 
                                 }
-                                
+
 
                                 // select form
 
@@ -615,10 +485,10 @@ body {
                                 }
 
                                 .formDetails.coupon {
-                                
+
                                     display: flex;
                                     display: none;
-                                
+
 
                                     .form-title {
                                         input {
@@ -654,7 +524,8 @@ body {
 
 
                                 }
-                                .coupon.offerOpen{
+
+                                .coupon.offerOpen {
                                     display: block;
                                     display: flex;
 
@@ -726,6 +597,32 @@ body {
                     }
                 }
 
+            }
+
+            // footer
+
+            .footer-container {
+                .inner-footer-container {
+                    background-color: #EAEAEA;
+                    width: 100%;
+
+                    .footerText {
+                        padding: 20px 0px;
+                        text-align: center;
+                        color: #525252;
+                        font: 400 11px/14px @montserrat;
+
+                        @media screen and(max-width:767px) {
+                            padding: 20px 20px;
+                        }
+
+                    }
+
+                    a {
+                        color: #525252;
+                    }
+
+                }
             }
 
 
@@ -1203,6 +1100,27 @@ body {
                     .order-summary-container {
                         max-width: 340px;
                         padding: 18px;
+
+
+                        .order-page {
+                            .payments-calculations {
+                                .summaryDiv {
+
+                                    .formDetails.coupon {
+                                        .form-title {
+                                            input {
+                                                width: 226px;
+
+                                            }
+                                        }
+                                    }
+
+
+
+                                }
+
+                            }
+                        }
 
 
                         .order-page {
