@@ -380,93 +380,295 @@ body {
 
                         .payments-calculations {
 
-                            table {
-                                width: 100%;
-                                border-collapse: collapse;
+                            // table {
+                            //     width: 100%;
+                            //     border-collapse: collapse;
 
-                                // margin-bottom: 20px;
-                                tbody {
+                            //     // margin-bottom: 20px;
+                            //     tbody {
 
-                                    border-bottom: 5px solid #D3D3D3;
+                            //         border-bottom: 5px solid #D3D3D3;
 
-                                    tr {
+                            //         tr {
 
-                                        .top {
-                                            padding-top: 16px;
-                                        }
+                            //             .top {
+                            //                 padding-top: 16px;
+                            //             }
 
-                                        .order-title {
+                            //             .order-title {
+                            //                 text-transform: uppercase;
+                            //                 text-align: left;
+                            //                 font: bold 14px/50px @oxygen;
+                            //                 color: @primary-color;
+
+                            //                 .addCoupon {
+                            //                     color: #707070;
+                            //                     text-transform: capitalize;
+                            //                     font-weight: 400;
+                            //                 }
+
+                            //                 .cancel {
+                            //                     display: none;
+                            //                 }
+                            //             }
+
+                            //             .order-title:nth-child(2) {
+
+                            //                 text-align: end;
+
+                            //             }
+
+
+                            //             .itemTotal {
+                            //                 font: bold 22px/50px @oxygen;
+                            //             }
+
+                            //             .itemPrice {
+                            //                 font: bold 16px/50px @oxygen;
+                            //                 padding-top: 16px;
+
+                            //             }
+
+                            //         }
+
+                            //         .formDetails {
+                            //             // display: none;
+
+                            //             .order-title {
+                            //                 text-align: left;
+
+                            //                 label {
+                            //                     font: 400 14px/50px @oxygen;
+                            //                 }
+
+                            //                 select,
+                            //                 input {
+                            //                     height: 40px;
+                            //                     padding: 0.5em;
+                            //                     border: 1px solid #e2e2e2;
+                            //                     border-radius: 2px;
+                            //                     font-size: 13px;
+                            //                     color: #707070;
+                            //                     width: 150px;
+                            //                     font: 400 13px/16px @oxygen;
+                            //                 }
+
+                            //                 .estimateBtn {
+                            //                     height: 40px;
+                            //                     padding: 0.5em;
+                            //                     background-color: black;
+                            //                     border-radius: 2px;
+                            //                     font: bold 13px/16px @oxygen;
+                            //                     color: white;
+                            //                     width: 100%;
+                            //                     border: none;
+                            //                 }
+                            //             }
+
+                            //             .form {
+                            //                 text-align: end;
+                            //             }
+
+
+
+
+                            //         }
+
+                            //         // .coupon {
+                            //         //     // display: block;
+
+                            //         //     td {
+                            //         //         input {
+                            //         //             height: 40px;
+                            //         //             padding: 0.5em;
+                            //         //             border: 1px solid #e2e2e2;
+                            //         //             border-radius: 2px;
+                            //         //             font-size: 13px;
+                            //         //             color: #707070;
+                            //         //             width: 200px;
+                            //         //             font: 400 13px/16px @oxygen;
+                            //         //         }
+                            //         //         .apply{
+                            //         //             height: 40px;
+                            //         //             padding: 0.5em;
+                            //         //             background-color: black;
+                            //         //             border-radius: 2px;
+                            //         //             font: bold 13px/16px @oxygen;
+                            //         //             color: white;
+                            //         //             width: 60px;
+                            //         //             border: none;
+                            //         //         }
+
+                            //         //     }
+
+
+
+                            //         // }
+
+                            //     }
+
+                            //    
+
+                            // }
+
+                            .summaryDiv {
+
+                                .subTotal {
+                                    display: flex;
+                                    justify-content: space-between;
+                                    align-items: center;
+
+                                    .totalTitle {
+                                        text-transform: uppercase;
+                                        text-align: left;
+                                        font: bold 14px/50px @oxygen;
+                                        color: @primary-color;
+                                    }
+
+                                    .itemPrice {
+                                        font: bold 16px/50px @oxygen;
+
+                                    }
+
+                                    .addInfo,
+                                    a {
+                                        color: #707070;
+                                        text-transform: capitalize;
+                                        font-weight: 400;
+                                        font: 400 14px/50px @oxygen;
+
+
+                                    }
+
+
+                                    .orderTotal {
+                                        font: bold 14px/50px @oxygen;
+                                        text-transform: uppercase;
+
+                                    }
+
+                                    .orderPrice {
+                                        font: bold 22px/50px @oxygen;
+
+                                    }
+
+
+
+                                }
+                                
+
+                                // select form
+
+                                .formDetails {
+                                    display: flex;
+                                    justify-content: space-between;
+                                    align-items: center;
+                                    display: none;
+
+                                    .form-title {
+                                        label {
+                                            font: 400 14px/50px @oxygen;
                                             text-transform: uppercase;
-                                            text-align: left;
-                                            font: bold 14px/50px @oxygen;
-                                            color: @primary-color;
-
-                                            .addCoupon {
-                                                color: #707070;
-                                                text-transform: capitalize;
-                                                font-weight: 400;
-                                            }
-                                        }
-
-                                        .order-title:nth-child(2) {
-
-                                            text-align: end;
-
-                                        }
-
-
-                                        .itemTotal {
-                                            font: bold 22px/50px @oxygen;
-                                        }
-
-                                        .itemPrice {
-                                            font: bold 16px/50px @oxygen;
-                                            padding-top: 16px;
-
-                                        }
-
-                                    }
-
-                                    .formDetails {
-                                        display: none;
-
-                                        .order-title {
-
-                                            label {
-                                                font: 400 14px/50px @oxygen;
-                                            }
-
-                                            select {
-                                                height: 40px;
-                                                padding: 0.5em;
-                                                border: 1px solid #e2e2e2;
-                                                border-radius: 2px;
-                                                font-size: 13px;
-                                                color: #707070;
-                                                width: 160px;
-                                                font: 400 13px/16px @oxygen;
-                                            }
-
-                                            .estimateBtn {
-                                                height: 40px;
-                                                padding: 0.5em;
-                                                background-color: black;
-                                                border-radius: 2px;
-                                                font: bold 13px/16px @oxygen;
-                                                color: white;
-                                                width: 160px;
-                                                border: none;
-                                            }
                                         }
                                     }
 
-                                    .open {
-                                        display: block;
+                                    .estimateBtn {
+                                        height: 40px;
+                                        padding: 0.5em;
+                                        background-color: black;
+                                        border-radius: 2px;
+                                        font: bold 13px/16px @oxygen;
+                                        color: white;
+                                        width: 100%;
+                                        max-width: 160px;
+                                        border: none;
+                                    }
+
+                                    .select-form {
+
+                                        select,
+                                        input {
+                                            height: 40px;
+                                            padding: 0.5em;
+                                            border: 1px solid #e2e2e2;
+                                            border-radius: 2px;
+                                            font-size: 13px;
+                                            color: #707070;
+                                            width: 160px;
+
+                                            font: 400 13px/16px @oxygen;
+                                        }
                                     }
 
 
                                 }
+
+                                .last {
+                                    justify-content: end;
+                                    padding-top: 5px;
+
+                                }
+
+                                .formDetails.open {
+                                    display: block;
+                                    display: flex;
+                                }
+
+                                .formDetails.coupon {
+                                
+                                    display: flex;
+                                    display: none;
+                                
+
+                                    .form-title {
+                                        input {
+                                            height: 40px;
+                                            padding: 5px 12px;
+                                            border: 1px solid #e2e2e2;
+                                            border-radius: 2px;
+                                            font-size: 13px;
+                                            color: #707070;
+                                            width: 240px;
+                                            font: 400 13px/16px @oxygen;
+
+                                            ::placeholder {
+                                                font: 400 13px/16px @oxygen;
+                                            }
+                                        }
+
+                                        .apply {
+                                            height: 40px;
+                                            padding: 0.5em;
+                                            background-color: black;
+                                            border-radius: 2px;
+                                            font: bold 13px/16px @oxygen;
+                                            color: white;
+                                            width: 70px;
+                                            border: none;
+                                        }
+
+
+
+                                    }
+
+
+
+                                }
+                                .coupon.offerOpen{
+                                    display: block;
+                                    display: flex;
+
+                                }
+
+
+
+
+
                             }
+
+
+
+
 
                             .online-payments {
                                 padding-top: 20px;

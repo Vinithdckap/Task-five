@@ -256,44 +256,57 @@ body .main-container .container .cart-order-container .order-summary-container .
   text-transform: uppercase;
   border-bottom: 5px solid #D3D3D3;
 }
-body .main-container .container .cart-order-container .order-summary-container .order-page .payments-calculations table {
-  width: 100%;
-  border-collapse: collapse;
+body .main-container .container .cart-order-container .order-summary-container .order-page .payments-calculations .summaryDiv .subTotal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-body .main-container .container .cart-order-container .order-summary-container .order-page .payments-calculations table tbody {
-  border-bottom: 5px solid #D3D3D3;
-}
-body .main-container .container .cart-order-container .order-summary-container .order-page .payments-calculations table tbody tr .top {
-  padding-top: 16px;
-}
-body .main-container .container .cart-order-container .order-summary-container .order-page .payments-calculations table tbody tr .order-title {
+body .main-container .container .cart-order-container .order-summary-container .order-page .payments-calculations .summaryDiv .subTotal .totalTitle {
   text-transform: uppercase;
   text-align: left;
   font: bold 14px/50px 'Oxygen', sans-serif;
   color: black;
 }
-body .main-container .container .cart-order-container .order-summary-container .order-page .payments-calculations table tbody tr .order-title .addCoupon {
+body .main-container .container .cart-order-container .order-summary-container .order-page .payments-calculations .summaryDiv .subTotal .itemPrice {
+  font: bold 16px/50px 'Oxygen', sans-serif;
+}
+body .main-container .container .cart-order-container .order-summary-container .order-page .payments-calculations .summaryDiv .subTotal .addInfo,
+body .main-container .container .cart-order-container .order-summary-container .order-page .payments-calculations .summaryDiv .subTotal a {
   color: #707070;
   text-transform: capitalize;
   font-weight: 400;
-}
-body .main-container .container .cart-order-container .order-summary-container .order-page .payments-calculations table tbody tr .order-title:nth-child(2) {
-  text-align: end;
-}
-body .main-container .container .cart-order-container .order-summary-container .order-page .payments-calculations table tbody tr .itemTotal {
-  font: bold 22px/50px 'Oxygen', sans-serif;
-}
-body .main-container .container .cart-order-container .order-summary-container .order-page .payments-calculations table tbody tr .itemPrice {
-  font: bold 16px/50px 'Oxygen', sans-serif;
-  padding-top: 16px;
-}
-body .main-container .container .cart-order-container .order-summary-container .order-page .payments-calculations table tbody .formDetails {
-  display: none;
-}
-body .main-container .container .cart-order-container .order-summary-container .order-page .payments-calculations table tbody .formDetails .order-title label {
   font: 400 14px/50px 'Oxygen', sans-serif;
 }
-body .main-container .container .cart-order-container .order-summary-container .order-page .payments-calculations table tbody .formDetails .order-title select {
+body .main-container .container .cart-order-container .order-summary-container .order-page .payments-calculations .summaryDiv .subTotal .orderTotal {
+  font: bold 14px/50px 'Oxygen', sans-serif;
+  text-transform: uppercase;
+}
+body .main-container .container .cart-order-container .order-summary-container .order-page .payments-calculations .summaryDiv .subTotal .orderPrice {
+  font: bold 22px/50px 'Oxygen', sans-serif;
+}
+body .main-container .container .cart-order-container .order-summary-container .order-page .payments-calculations .summaryDiv .formDetails {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  display: none;
+}
+body .main-container .container .cart-order-container .order-summary-container .order-page .payments-calculations .summaryDiv .formDetails .form-title label {
+  font: 400 14px/50px 'Oxygen', sans-serif;
+  text-transform: uppercase;
+}
+body .main-container .container .cart-order-container .order-summary-container .order-page .payments-calculations .summaryDiv .formDetails .estimateBtn {
+  height: 40px;
+  padding: 0.5em;
+  background-color: black;
+  border-radius: 2px;
+  font: bold 13px/16px 'Oxygen', sans-serif;
+  color: white;
+  width: 100%;
+  max-width: 160px;
+  border: none;
+}
+body .main-container .container .cart-order-container .order-summary-container .order-page .payments-calculations .summaryDiv .formDetails .select-form select,
+body .main-container .container .cart-order-container .order-summary-container .order-page .payments-calculations .summaryDiv .formDetails .select-form input {
   height: 40px;
   padding: 0.5em;
   border: 1px solid #e2e2e2;
@@ -303,18 +316,44 @@ body .main-container .container .cart-order-container .order-summary-container .
   width: 160px;
   font: 400 13px/16px 'Oxygen', sans-serif;
 }
-body .main-container .container .cart-order-container .order-summary-container .order-page .payments-calculations table tbody .formDetails .order-title .estimateBtn {
+body .main-container .container .cart-order-container .order-summary-container .order-page .payments-calculations .summaryDiv .last {
+  justify-content: end;
+  padding-top: 5px;
+}
+body .main-container .container .cart-order-container .order-summary-container .order-page .payments-calculations .summaryDiv .formDetails.open {
+  display: block;
+  display: flex;
+}
+body .main-container .container .cart-order-container .order-summary-container .order-page .payments-calculations .summaryDiv .formDetails.coupon {
+  display: flex;
+  display: none;
+}
+body .main-container .container .cart-order-container .order-summary-container .order-page .payments-calculations .summaryDiv .formDetails.coupon .form-title input {
+  height: 40px;
+  padding: 5px 12px;
+  border: 1px solid #e2e2e2;
+  border-radius: 2px;
+  font-size: 13px;
+  color: #707070;
+  width: 240px;
+  font: 400 13px/16px 'Oxygen', sans-serif;
+}
+body .main-container .container .cart-order-container .order-summary-container .order-page .payments-calculations .summaryDiv .formDetails.coupon .form-title input ::placeholder {
+  font: 400 13px/16px 'Oxygen', sans-serif;
+}
+body .main-container .container .cart-order-container .order-summary-container .order-page .payments-calculations .summaryDiv .formDetails.coupon .form-title .apply {
   height: 40px;
   padding: 0.5em;
   background-color: black;
   border-radius: 2px;
   font: bold 13px/16px 'Oxygen', sans-serif;
   color: white;
-  width: 160px;
+  width: 70px;
   border: none;
 }
-body .main-container .container .cart-order-container .order-summary-container .order-page .payments-calculations table tbody .open {
+body .main-container .container .cart-order-container .order-summary-container .order-page .payments-calculations .summaryDiv .coupon.offerOpen {
   display: block;
+  display: flex;
 }
 body .main-container .container .cart-order-container .order-summary-container .order-page .payments-calculations .online-payments {
   padding-top: 20px;
