@@ -53,45 +53,57 @@
 body {
   font-family: 'Montserrat';
 }
+body .max-container {
+  margin: 0 auto;
+  max-width: 1360px;
+}
 body button {
   cursor: pointer;
 }
-body .main-container .container {
-  max-width: 1440px;
-  margin: 0 auto;
-}
-body .main-container .container .header-container .header-section .header {
+body .main-container .container .header-section .header-container {
   background-color: black;
   width: 100%;
   height: auto;
+}
+body .main-container .container .header-section .header-container .max-container {
+  margin: 0 auto;
+  max-width: 1360px;
+}
+body .main-container .container .header-section .header-container .max-container .header {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-body .main-container .container .header-container .header-section .header .logo .dltLogo {
+body .main-container .container .header-section .header-container .max-container .header .logo .dltLogo {
   height: auto;
   padding: 23px 0px 18px 41px;
 }
-body .main-container .container .header-container .header-section .header .title .freeTitle {
+body .main-container .container .header-section .header-container .max-container .header .title .freeTitle {
   font: 500 20px/38px 'Montserrat', sans-serif;
   color: #FFFFFF;
 }
-body .main-container .container .header-container .header-section .header .title .spanText {
+body .main-container .container .header-section .header-container .max-container .header .title .spanText {
   font: bold 20px/38px 'Montserrat', sans-serif;
   color: #FFFFFF;
 }
-body .main-container .container .header-container .header-section .header .account {
+body .main-container .container .header-section .header-container .max-container .header .account {
   margin-right: 40px;
 }
-body .main-container .container .header-container .header-section .header .account h3 {
+body .main-container .container .header-section .header-container .max-container .header .account h3 {
   color: #FFFFFF;
   font: bold 20px/38px 'Montserrat', sans-serif;
 }
-body .main-container .container .header-container .header-section .header .account a {
+body .main-container .container .header-section .header-container .max-container .header .account a {
   color: #FFFFFF;
 }
-body .main-container .container .service-container .service-section .facilities {
+body .main-container .container .service-container {
   background-color: #F4F4F4;
+}
+body .main-container .container .service-container .service-section {
+  margin: 0 auto;
+  max-width: 1360px;
+}
+body .main-container .container .service-container .service-section .facilities {
   padding: 14px 0px 20px 85px;
   display: flex;
   column-gap: 40px;
@@ -122,6 +134,8 @@ body .main-container .container .service-container .service-section .facilities 
   border-right: unset;
 }
 body .main-container .container .cart-order-container {
+  max-width: 1360px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-evenly;
   padding: 40px 0px 20px 65px;
@@ -213,6 +227,7 @@ body .main-container .container .cart-order-container .cartPage-container .cartP
 }
 body .main-container .container .cart-order-container .cartPage-container .cartPage-sections .cart-table .table-body .cart-item .input .input-div .decrease .more {
   color: #D3D3D3;
+  vertical-align: middle;
 }
 body .main-container .container .cart-order-container .cartPage-container .cartPage-sections .cart-table .table-body .cart-item .input .input-div input {
   max-width: 40px;
@@ -227,6 +242,7 @@ body .main-container .container .cart-order-container .cartPage-container .cartP
 }
 body .main-container .container .cart-order-container .cartPage-container .cartPage-sections .cart-table .table-body .cart-item .input .input-div .increase .less {
   color: #707070;
+  vertical-align: middle;
 }
 body .main-container .container .cart-order-container .cartPage-container .cartPage-sections .cart-table .table-body .cart-item .total {
   padding-left: unset;
@@ -236,10 +252,16 @@ body .main-container .container .cart-order-container .cartPage-container .cartP
   font: bold 16px/50px 'Oxygen', sans-serif;
   color: black;
 }
+body .main-container .container .cart-order-container .cartPage-container .cartPage-sections .cart-table .table-body .cart-item .total .remove {
+  position: relative;
+}
 body .main-container .container .cart-order-container .cartPage-container .cartPage-sections .cart-table .table-body .cart-item .total .remove .cancel {
   vertical-align: middle;
   color: #5A5B5E;
   cursor: pointer;
+  position: absolute;
+  top: -3px;
+  left: 3px;
 }
 body .main-container .container .cart-order-container .cartPage-container .backSection .backContent .keepShopping {
   border: none;
@@ -433,39 +455,39 @@ body .main-container .container .footer-container .inner-footer-container a {
   color: #525252;
 }
 @media screen and (min-width: 1024px) and (max-width: 1365px) {
-  body .main-container .container .header-container .header-section .header .logo .dltLogo {
+  body .main-container .container .header-section .header-container .header .logo .dltLogo {
     max-width: 116px;
   }
-  body .main-container .container .header-container .header-section .header .title .freeTitle {
+  body .main-container .container .header-section .header-container .header .title .freeTitle {
     font-size: 20px;
   }
-  body .main-container .container .header-container .header-section .header .account h3 {
+  body .main-container .container .header-section .header-container .header .account h3 {
     font-size: 14px;
   }
-  body .main-container .container .header-container .service-container .service-section .facilities {
+  body .main-container .container .header-section .service-container .service-section .facilities {
     padding: 14px 0px 20px 20px;
     column-gap: 16px;
     justify-content: space-evenly;
   }
-  body .main-container .container .header-container .service-container .service-section .facilities .service .serviceImg .delivery {
+  body .main-container .container .header-section .service-container .service-section .facilities .service .serviceImg .delivery {
     height: auto;
   }
-  body .main-container .container .header-container .service-container .service-section .facilities .service .service-contents {
+  body .main-container .container .header-section .service-container .service-section .facilities .service .service-contents {
     padding-right: 16px;
     padding-left: 14px;
   }
-  body .main-container .container .header-container .service-container .service-section .facilities .service .service-contents .deliveryTitle {
+  body .main-container .container .header-section .service-container .service-section .facilities .service .service-contents .deliveryTitle {
     font-size: 20px;
     line-height: 28px;
   }
-  body .main-container .container .header-container .service-container .service-section .facilities .service .service-contents .deliveryContent {
+  body .main-container .container .header-section .service-container .service-section .facilities .service .service-contents .deliveryContent {
     font-size: 13px;
     line-height: 18px;
   }
-  body .main-container .container .header-container .service-container .service-section .facilities .first {
+  body .main-container .container .header-section .service-container .service-section .facilities .first {
     max-width: 320px;
   }
-  body .main-container .container .header-container .service-container .service-section .facilities .second {
+  body .main-container .container .header-section .service-container .service-section .facilities .second {
     max-width: 330px;
   }
   body .main-container .container .cart-order-container {
@@ -502,15 +524,15 @@ body .main-container .container .footer-container .inner-footer-container a {
   }
 }
 @media screen and (max-width: 1023px) {
-  body .main-container .container .header-container .header-section .header .logo .dltLogo {
+  body .main-container .container .header-section .header-container .header .logo .dltLogo {
     height: auto;
     padding: 23px 0px 18px 20px;
     max-width: 84px;
   }
-  body .main-container .container .header-container .header-section .header .title .freeTitle {
+  body .main-container .container .header-section .header-container .header .title .freeTitle {
     font-size: 15px;
   }
-  body .main-container .container .header-container .header-section .header .account h3 {
+  body .main-container .container .header-section .header-container .header .account h3 {
     font-size: 13px;
   }
   body .main-container .container .flex-container {
@@ -580,7 +602,7 @@ body .main-container .container .footer-container .inner-footer-container a {
   }
   body .main-container .container .flex-container .cart-order-container .cartPage-container .cartPage-sections .cart-table .table-body .cart-item .table-data .tab-lable {
     display: inline-block;
-    font: bold 16px/50px 'Montserrat', sans-serif;
+    font: bold 12px/50px 'Montserrat', sans-serif;
   }
   body .main-container .container .flex-container .cart-order-container .cartPage-container .cartPage-sections .cart-table .table-body .cart-item .product {
     flex-basis: 76%;
@@ -598,12 +620,9 @@ body .main-container .container .footer-container .inner-footer-container a {
   body .main-container .container .flex-container .cart-order-container .cartPage-container .cartPage-sections .cart-table .table-body .cart-item .total .tab-lable {
     display: block;
   }
-  body .main-container .container .flex-container .cart-order-container .cartPage-container .cartPage-sections .cart-table .table-body .cart-item .total .remove {
-    padding-left: 20px;
-  }
 }
 @media screen and (max-width: 767px) {
-  body .main-container .container .header-container .header-section .header .title {
+  body .main-container .container .header-section .header-container .header .title {
     display: none;
   }
   body .main-container .container .flex-container {

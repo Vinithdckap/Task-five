@@ -35,6 +35,11 @@
 
 body {
 
+    .max-container {
+        margin: 0 auto;
+        max-width: 1360px;
+    }
+
     button {
         cursor: pointer;
     }
@@ -43,59 +48,69 @@ body {
 
     .main-container {
         .container {
-            max-width: 1440px;
-            margin: 0 auto;
+
 
             // header
-            .header-container {
+            .header-section {
 
 
                 // top header nav
-                .header-section {
+                .header-container {
+                    background-color: @primary-color;
+                    width: 100%;
+                    height: auto;
 
-                    .header {
-                        background-color: @primary-color;
-                        width: 100%;
-                        height: auto;
-                        display: flex;
-                        align-items: center;
-                        justify-content: space-between;
+                    .max-container {
+                        margin: 0 auto;
+                        max-width: 1360px;
 
-                        .logo {
-                            .dltLogo {
-                                height: auto;
-                                padding: 23px 0px 18px 41px;
+                        .header {
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+
+
+
+                            .logo {
+                                .dltLogo {
+                                    height: auto;
+                                    padding: 23px 0px 18px 41px;
+
+                                }
+                            }
+
+                            .title {
+                                .freeTitle {
+                                    font: 500 20px/38px @montserrat;
+                                    color: @tertiary-color;
+                                }
+
+                                .spanText {
+                                    font: bold 20px/38px @montserrat;
+                                    color: @tertiary-color;
+                                }
+                            }
+
+                            .account {
+                                margin-right: 40px;
+
+                                h3 {
+                                    color: @tertiary-color;
+                                    font: bold 20px/38px @montserrat;
+                                }
+
+                                a {
+                                    color: @tertiary-color;
+                                }
 
                             }
+
                         }
-
-                        .title {
-                            .freeTitle {
-                                font: 500 20px/38px @montserrat;
-                                color: @tertiary-color;
-                            }
-
-                            .spanText {
-                                font: bold 20px/38px @montserrat;
-                                color: @tertiary-color;
-                            }
-                        }
-
-                        .account {
-                            margin-right: 40px;
-
-                            h3 {
-                                color: @tertiary-color;
-                                font: bold 20px/38px @montserrat;
-                            }
-
-                            a {
-                                color: @tertiary-color;
-                            }
-
-                        }
-
                     }
+
+
+
+
                 }
 
             }
@@ -103,9 +118,13 @@ body {
 
             // second header service container
             .service-container {
+                background-color: #F4F4F4;
+
                 .service-section {
+                    margin: 0 auto;
+                    max-width: 1360px;
+
                     .facilities {
-                        background-color: #F4F4F4;
                         padding: 14px 0px 20px 85px;
                         display: flex;
                         // align-items: center;
@@ -160,6 +179,8 @@ body {
             // order page container
             .cart-order-container {
 
+                max-width: 1360px;
+                margin: 0 auto;
                 display: flex;
                 justify-content: space-evenly;
                 padding: 40px 0px 20px 65px;
@@ -206,10 +227,11 @@ body {
                                         font: bold 16px/50px @montserrat;
 
                                     }
-                                    .qty{
+
+                                    .qty {
                                         text-align: center;
                                         padding-right: 38px;
-                                    
+
                                     }
                                 }
 
@@ -296,6 +318,7 @@ body {
 
                                                 .more {
                                                     color: #D3D3D3;
+                                                    vertical-align: middle;
                                                 }
 
 
@@ -316,6 +339,7 @@ body {
 
                                                 .less {
                                                     color: #707070;
+                                                    vertical-align: middle;
                                                 }
                                             }
                                         }
@@ -333,10 +357,14 @@ body {
 
                                         .remove {
 
+                                            position: relative;
                                             .cancel {
                                                 vertical-align: middle;
                                                 color: #5A5B5E;
                                                 cursor: pointer;
+                                                position: absolute;
+                                                top: -3px;
+                                                left: 3px;
 
 
                                             }
@@ -485,16 +513,17 @@ body {
                                             -moz-appearance: none;
                                         }
 
-                                     
+
                                     }
-                                    .drop          {
+
+                                    .drop {
                                         position: absolute;
                                         top: 0px;
                                         right: 0px;
                                         vertical-align: middle;
                                         top: 6px;
                                         font-size: 30px;
-                                        color:#707070;
+                                        color: #707070;
                                     }
 
 
@@ -662,8 +691,8 @@ body {
 
         .main-container {
             .container {
-                .header-container {
-                    .header-section {
+                .header-section {
+                    .header-container {
                         .header {
 
                             .logo {
@@ -815,8 +844,8 @@ body {
     body {
         .main-container {
             .container {
-                .header-container {
-                    .header-section {
+                .header-section {
+                    .header-container {
                         .header {
                             .logo {
                                 .dltLogo {
@@ -949,7 +978,8 @@ body {
 
                                                 .tab-lable {
                                                     display: inline-block;
-                                                    font: bold 16px/50px @montserrat;
+                                                    font: bold 12px/50px 'Montserrat', sans-serif;
+
 
                                                 }
 
@@ -973,8 +1003,8 @@ body {
 
                                             }
 
-                                            .input{
-                                                .tab-lable{
+                                            .input {
+                                                .tab-lable {
                                                     padding-left: 28px;
 
                                                 }
@@ -985,10 +1015,10 @@ body {
                                                     display: block;
                                                 }
 
-                                                .remove {
-                                                    padding-left: 20px;
+                                                // .remove {
+                                                //     padding-left: 20px;
 
-                                                }
+                                                // }
                                             }
 
                                         }
@@ -1022,8 +1052,8 @@ body {
     body {
         .main-container {
             .container {
-                .header-container {
-                    .header-section {
+                .header-section {
+                    .header-container {
                         .header {
                             .title {
                                 display: none;
@@ -1145,7 +1175,7 @@ body {
                                             .input {
                                                 // text-align: center;
 
-                                                .tab-lable{
+                                                .tab-lable {
                                                     padding-left: 36px;
 
                                                 }
